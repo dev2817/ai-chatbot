@@ -23,6 +23,20 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      '@typescript-eslint/no-explicit-any': 'off',
+      'react-hooks/exhaustive-deps': 'off',
+      "no-empty-pattern": "off",
+      "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "{}": {
+            "message": "Use `unknown` if you mean any type, or `object` for any object.",
+            "fixWith": "unknown"
+          }
+        }
+      }
+    ]
     },
   },
 )
