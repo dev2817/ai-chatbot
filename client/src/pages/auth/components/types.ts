@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 export type TTextBox = {
     type: string;
     name: string;
@@ -7,7 +5,7 @@ export type TTextBox = {
     value: any;
     disabled?: boolean;
     error?: boolean;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange: (e: any) => void;
 }
 
 export type TButton = {
